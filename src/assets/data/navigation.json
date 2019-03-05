@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "o nama",
+        "path": "http://localhost/PijacApp/about.html",
+        "img": "src/assets/img/onama.png",
+        "imga": "src/assets/img/onama_active.png"
+    },
+    {
+        "id": 2,
+        "name": "proizvodi",
+        "path": "http://localhost/PijacApp/shop.html",
+        "img": "src/assets/img/proizvodi.png",
+        "imga": "src/assets/img/proizvodi_active.png"
+    },
+    {
+        "id": 3,
+        "name": "proizvođači",
+        "path": "http://localhost/PijacApp/suppliers.html",
+        "img": "src/assets/img/proizvodjaci.png",
+        "imga": "src/assets/img/proizvodjaci_active.png"
+    },
+    {
+        "id": 4,
+        "name": "manifestacije",
+        "path": "http://localhost/PijacApp/events.html",
+        "img": "src/assets/img/manifestacije.png",
+        "imga": "src/assets/img/manifestacije_active.png"
+    },
+    {
+        "id": 5,
+        "name": "recepti",
+        "path": "http://localhost/PijacApp/recipes.html",
+        "img": "src/assets/img/recepti.png",
+        "imga": "src/assets/img/recepti_active.png"
+    },
+    {
+        "id": 6,
+        "name": "korpa",
+        "path": "http://localhost/PijacApp/cart.html",
+        "img": "src/assets/img/korpa.png",
+        "imga": "src/assets/img/korpa_active.png"
+    }
+]

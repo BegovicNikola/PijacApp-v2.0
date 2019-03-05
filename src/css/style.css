@@ -1,0 +1,9 @@
+body{
+    background-image: url('../assets/img/pozadina.png');
+}
+#logo{
+    width: 400px;
+}
+.nav-link img{
+    width: 100px;
+}
