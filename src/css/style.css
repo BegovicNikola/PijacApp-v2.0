@@ -4,6 +4,51 @@ body{
 #logo{
     width: 400px;
 }
+/* .nav-link{
+    cursor: pointer;
+} */
 .nav-link img{
     width: 100px;
 }
+/* Checkbox Styling -> Start */
+ul{
+    list-style-type: none;
+}
+.checkbox_holder {
+    height: 50px;
+}
+.checkbox_holder label {
+    background-color: #fff;
+    border: 2px solid #D1C0AC;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 24px;
+}
+.checkbox_holder label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 3px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    width: 14px;
+}
+.checkbox_holder input[type="checkbox"] {
+    visibility: hidden;
+}
+.checkbox_holder input[type="checkbox"]:checked + label {
+    background-color: #D1C0AC;
+    border-color: #D1C0AC;
+}
+.checkbox_holder input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+/* Checkbox Styling -> End */

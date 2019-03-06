@@ -1,4 +1,4 @@
-window.onload = () => {
+$(document).ready(() => {
     const navholder = document.getElementById('navholder');
     // Calling func
     getNav();
@@ -31,12 +31,12 @@ window.onload = () => {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100 d-flex justify-content-center">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
         `;
         navigation.forEach(nav => {
             html += `
                 <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link d-flex flex-column align-items-center" href="${nav.path}">
+                    <a class="nav-link d-flex flex-column align-items-center font-weight-bold" href="${nav.path}">
                         <img style="width: 100px;" src="${activeNav(nav, currentPage)}" alt="${nav.name}" />
                         ${nav.name}
                     </a>
@@ -49,4 +49,4 @@ window.onload = () => {
         `;
         navholder.innerHTML = html;
     }
-}
+});
