@@ -11,27 +11,27 @@
     },
     {
         "id": 1,
-        "name": "krompir",
+        "name": "jabuka",
         "price": 100,
         "priceType": "din/kg",
         "description": "lorem ipsum",
         "img": "src/assets/img/krompir.png",
         "map": "src/assets/img/mapa.png",
-        "category": "povrce"
+        "category": "voce"
     },
     {
         "id": 1,
-        "name": "krompir",
+        "name": "sljiva",
         "price": 100,
         "priceType": "din/kg",
         "description": "lorem ipsum",
         "img": "src/assets/img/krompir.png",
         "map": "src/assets/img/mapa.png",
-        "category": "povrce"
+        "category": "autohtoni"
     },
     {
         "id": 1,
-        "name": "krompir",
+        "name": "luk",
         "price": 100,
         "priceType": "din/kg",
         "description": "lorem ipsum",
