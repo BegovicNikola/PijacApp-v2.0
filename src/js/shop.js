@@ -23,11 +23,15 @@ $(document).ready(() =>{
         html += `
             <div class="row">
         `;
-        products.forEach(product => {
+        products.forEach((product, index) => {
             html += `
-                <div class="col-md-3">
+                <div class="col-md-4 ${ index < 3 ? null : "mt-3" }">
                     <div class="card productItem" data-product="${product.name}">
-                        ${product.name}, ${product.category}
+                        <div class="card-body text-center">
+                            <img class="w-100 border rounded" src="${product.img}" alt="${product.title}" />
+                            <h5 class="mt-3">${product.title}</h5>
+                            <span>${product.price}&nbsp;${product.priceType}</span>
+                        </div>
                     </div>
                 </div>
             `;
@@ -63,19 +67,40 @@ $(document).ready(() =>{
 
     // Render single product func
     const renderProduct = product =>{
-        let pro = product[0];
+        let res = product[0];
         let html = "";
         html += `
             <div class="row">
-        `;
-            html += `
                 <div class="col-12">
                     <div class="card">
-                        ${pro.name}, ${pro.category}
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="w-50 pr-1">
+                                    <h3>${res.title}</h3>
+                                    <img class="w-100" src="${res.img}" alt="${res.title}" />
+                                </div>
+                                <div class="w-50 pl-1 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <input id="quantity" class="form-control mb-3" type="number" min="1" max="10" value="1" />
+                                        <div class="d-flex justify-content-between">
+                                            <span>Cena izražena u:</span>
+                                            <span>${res.priceType}</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span>Ukupno:</span>
+                                            <span id="total">${res.price}&nbsp;din</span>
+                                        </div>
+                                        <button id="addToCart" class="btn btn-success form-control mt-3">Kupi</button>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h3>Opis proizvoda</h3>
+                                        <p>${res.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            `;
-        html += `
             </div>
         `;
         productsHolder.innerHTML = html;
@@ -87,9 +112,27 @@ $(document).ready(() =>{
         filters.forEach(filter => {
             filter.checked = false;
         });
-
         // Reseting search
         searchField[0].value = null;
+
+        // Calculating total
+        const price = res.price;
+        $('#total')[0].innerHTML = price + '&nbsp;din';
+        const total = $('#quantity').on('input',() => {
+            $('#total')[0].innerHTML = price * $('#quantity')[0].value + '&nbsp;din';
+        });
+        // Adding to Cart
+        $('#addToCart').click(() => {
+            const total = $('#total')[0].innerHTML;
+            storeInCart(res, total);
+        });
+        // Store Products in cart
+        const storeInCart = (res, total) => {
+            let cartContent = {"total": total, "res": res};
+            const cartContentString = JSON.stringify(cartContent);
+            localStorage.setItem(res.name, cartContentString);
+            console.log(JSON.parse(localStorage.getItem(res.name)));
+        }
     }
 
     // Render Filtered Products
@@ -115,13 +158,13 @@ $(document).ready(() =>{
                 dataType: 'json',
                 success: (data) => {
 
-                    let parsedData = [];
+                    let filteredData = [];
 
                     filters.forEach(filter => {
                         if(filter.checked){
                             let res = data.filter(product => product.category == filter.param);
                             res.forEach(product => {
-                                parsedData.push(product);
+                                filteredData.push(product);
                             });
                         }
                     });
@@ -130,7 +173,7 @@ $(document).ready(() =>{
 
                     // IF there are checked filters render filtered ELSE render ALL
                     if(checkedFilters.length){
-                        renderProducts(parsedData);
+                        renderProducts(filteredData);
                     }else{
                         renderProducts(data);
                     }
@@ -157,6 +200,8 @@ $(document).ready(() =>{
             searchProducts(searchInput);
         }, 600); 
     });
+
+    // Get products with search param
     const searchProducts = searchInput => {
         $.ajax({
             url: "src/assets/data/products.json",
