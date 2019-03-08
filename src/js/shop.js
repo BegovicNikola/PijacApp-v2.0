@@ -128,10 +128,9 @@ $(document).ready(() =>{
         });
         // Store Products in cart
         const storeInCart = (res, total) => {
-            let cartContent = {"total": total, "res": res};
+            let cartContent = {"total": total, "quantity": $('#quantity')[0].value , "res": res};
             const cartContentString = JSON.stringify(cartContent);
-            localStorage.setItem(res.name, cartContentString);
-            console.log(JSON.parse(localStorage.getItem(res.name)));
+            localStorage.setItem(res.title, cartContentString);
         }
     }
 
