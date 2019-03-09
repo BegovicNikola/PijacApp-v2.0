@@ -1,9 +1,10 @@
 $(document).ready(() =>{
     // Set render holder 
     const productsHolder = document.getElementById('products');
-
+    
     // Exec Get Products func
-    (function getProducts(){
+    getProducts();
+    function getProducts(){
         $.ajax({
             url: "src/assets/data/products.json",
             method: "GET",
@@ -15,7 +16,7 @@ $(document).ready(() =>{
                 console.log(err);
             }
         });
-    })();
+    };
 
     // Render Products func
     const renderProducts = products => {
@@ -44,7 +45,7 @@ $(document).ready(() =>{
 
         // Getting the particular product on click
         $('.productItem').click(e => {
-            productName = e.currentTarget.attributes[1].value;
+            const productName = e.currentTarget.attributes[1].value;
             getProduct(productName);
         });
     }
@@ -56,8 +57,8 @@ $(document).ready(() =>{
             method: "GET",
             dataType: "json",
             success: data => {
-                let res = data.filter(product => productName == product.name);
-                renderProduct(res);
+                const res = data.filter(product => productName == product.name);
+                renderProduct(res[0]);
             },
             error: err => {
                 console.log(err);
@@ -67,34 +68,40 @@ $(document).ready(() =>{
 
     // Render single product func
     const renderProduct = product =>{
-        let res = product[0];
         let html = "";
         html += `
             <div class="row">
                 <div class="col-12">
+                    <button id="reProducts" class="btn btn-success form-control mb-3">
+                        <span class="fa fa-share-square"></span>
+                        Nastavi razgledanje
+                    </button>
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-start">
                                 <div class="w-50 pr-1">
-                                    <h3>${res.title}</h3>
-                                    <img class="w-100" src="${res.img}" alt="${res.title}" />
+                                    <h3>${product.title}</h3>
+                                    <img class="w-100" src="${product.img}" alt="${product.title}" />
                                 </div>
                                 <div class="w-50 pl-1 d-flex flex-column justify-content-between">
                                     <div>
                                         <input id="quantity" class="form-control mb-3" type="number" min="1" max="10" value="1" />
                                         <div class="d-flex justify-content-between">
                                             <span>Cena izražena u:</span>
-                                            <span>${res.priceType}</span>
+                                            <span>${product.priceType}</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <span>Ukupno:</span>
-                                            <span id="total">${res.price}&nbsp;din</span>
+                                            <span id="total">${product.price}&nbsp;din</span>
                                         </div>
-                                        <button id="addToCart" class="btn btn-success form-control mt-3">Kupi</button>
+                                        <button id="addToCart" class="btn btn-success form-control mt-3">
+                                            <span class="fa fa-shopping-cart"></span>
+                                            Dodaj u korpu
+                                        </button>
                                     </div>
                                     <div class="mt-3">
-                                        <h3>Opis proizvoda</h3>
-                                        <p>${res.description}</p>
+                                        <h5>Opis proizvoda</h5>
+                                        <p>${product.description}</p>
                                     </div>
                                 </div>
                             </div>
@@ -116,22 +123,25 @@ $(document).ready(() =>{
         searchField[0].value = null;
 
         // Calculating total
-        const price = res.price;
+        const price = product.price;
         $('#total')[0].innerHTML = price + '&nbsp;din';
-        const total = $('#quantity').on('input',() => {
+        $('#quantity').on('input',() => {
             $('#total')[0].innerHTML = price * $('#quantity')[0].value + '&nbsp;din';
         });
         // Adding to Cart
         $('#addToCart').click(() => {
             const total = $('#total')[0].innerHTML;
-            storeInCart(res, total);
+            storeInCart(product, total);
         });
         // Store Products in cart
-        const storeInCart = (res, total) => {
-            let cartContent = {"total": total, "quantity": $('#quantity')[0].value , "res": res};
+        const storeInCart = (product, total) => {
+            let cartContent = {"total": total, "quantity": $('#quantity')[0].value , "product": product};
             const cartContentString = JSON.stringify(cartContent);
-            localStorage.setItem(res.title, cartContentString);
+            localStorage.setItem(product.title, cartContentString);
         }
+        $('#reProducts').click(() => {
+            getProducts();
+        });
     }
 
     // Render Filtered Products

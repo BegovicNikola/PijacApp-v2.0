@@ -1,8 +1,22 @@
+*{
+    font-family: 'Thasadith', sans-serif;
+}
 body{
     background-image: url('../assets/img/pozadina.png');
 }
+.btn-success{
+    background-color: #64698E;
+    border-color: #64698E;
+}
+.btn-success:hover{
+    background-color: #6c729b;
+    border-color: #6c729b;
+}
 #logo{
     width: 400px;
+}
+.cart-img{
+    width: 100px;
 }
 /* .nav-link{
     cursor: pointer;

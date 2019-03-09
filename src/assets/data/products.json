@@ -5,7 +5,7 @@
         "title": "Jabuka",
         "price": 100,
         "priceType": "din/kg",
-        "description": "lorem ipsum",
+        "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         "img": "src/assets/img/blitva.png",
         "map": "src/assets/img/mapa.png",
         "category": "povrce"
@@ -16,7 +16,7 @@
         "title": "Kruska",
         "price": 100,
         "priceType": "din/kg",
-        "description": "lorem ipsum",
+        "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         "img": "src/assets/img/krompir.png",
         "map": "src/assets/img/mapa.png",
         "category": "voce"
