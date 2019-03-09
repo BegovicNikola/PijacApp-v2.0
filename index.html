@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pijac na točkovi</title>
     <link href="https://fonts.googleapis.com/css?family=Thasadith:700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Bootstrap minified css cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom css -->
@@ -22,6 +23,41 @@
     <nav id="navholder" class="navbar navbar-expand-lg navbar-light container">
         <!-- Navigation render -->
     </nav>
+    <!-- Main -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card">
+                    <input class="form-control border-0" id="search" type="text" placeholder="Pretraga..." />
+                </div>
+                <div class="card mt-3">
+                    <h5 class="px-3 mb-4 mt-3">Kategorija</h5>
+                    <ul class="w-100 px-3 d-flex flex-column justify-content-between">
+                        <li class="position-relative checkbox_holder">
+                            <input type="checkbox" id="autohtoni" value="autohtoni" class="checkboxType">
+                            <label for="autohtoni"></label>
+                            <span class="ml-3">Autohtoni</span>
+                        </li>
+                        <li class="position-relative checkbox_holder">
+                            <input type="checkbox" id="voce" value="voce" class="checkboxType">
+                            <label for="voce"></label>
+                            <span class="ml-3">Voće</span>
+                        </li>
+                        <li class="position-relative checkbox_holder">
+                            <input type="checkbox" id="povrce" value="povrce" class="checkboxType">
+                            <label for="povrce"></label>
+                            <span class="ml-3">Povrće</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div id="products" class="card border-0 bg-transparent">
+                    <!-- Products Render -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Scripts -->
     <!-- jQuery core minified -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -31,6 +67,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Custom js -->
     <script src="src/js/main.js"></script>
-    <script src="src/js/index.js"></script>
+    <script src="src/js/shop.js"></script>
 </body>
 </html>

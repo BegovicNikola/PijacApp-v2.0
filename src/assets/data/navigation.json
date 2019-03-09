@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "name": "O nama",
-        "path": "http://localhost/PijacApp/about.html",
-        "img": "src/assets/img/onama.png",
-        "imga": "src/assets/img/onama_active.png"
-    },
-    {
-        "id": 2,
         "name": "Proizvodi",
-        "path": "http://localhost/PijacApp/shop.html",
+        "path": "http://localhost/PijacApp/index.html",
         "img": "src/assets/img/proizvodi.png",
         "imga": "src/assets/img/proizvodi_active.png"
     },
     {
+        "id": 2,
+        "name": "Recepti",
+        "path": "http://localhost/PijacApp/recipes.html",
+        "img": "src/assets/img/recepti.png",
+        "imga": "src/assets/img/recepti_active.png"
+    },
+    {
         "id": 3,
-        "name": "Proizvođači",
-        "path": "http://localhost/PijacApp/suppliers.html",
-        "img": "src/assets/img/proizvodjaci.png",
-        "imga": "src/assets/img/proizvodjaci_active.png"
+        "name": "Autor",
+        "path": "http://localhost/PijacApp/about.html",
+        "img": "src/assets/img/manifestacije.png",
+        "imga": "src/assets/img/manifestacije_active.png"
     },
     {
         "id": 4,
         "name": "Manifestacije",
         "path": "http://localhost/PijacApp/events.html",
-        "img": "src/assets/img/manifestacije.png",
-        "imga": "src/assets/img/manifestacije_active.png"
+        "img": "src/assets/img/onama.png",
+        "imga": "src/assets/img/onama_active.png"
     },
     {
         "id": 5,
-        "name": "Recepti",
-        "path": "http://localhost/PijacApp/recipes.html",
-        "img": "src/assets/img/recepti.png",
-        "imga": "src/assets/img/recepti_active.png"
+        "name": "Kontakt",
+        "path": "http://localhost/PijacApp/contact.html",
+        "img": "src/assets/img/proizvodjaci.png",
+        "imga": "src/assets/img/proizvodjaci_active.png"
     },
     {
         "id": 6,

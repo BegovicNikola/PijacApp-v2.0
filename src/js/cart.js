@@ -15,8 +15,8 @@ $(document).ready(() =>{
                 html += `
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <img class="cart-img border rounded" src="${currentItem.product.img}" alt="${currentItem.product.title} />"
-                        <h4 mb-0>${key}</h4>
-                        <p mb-0>${currentItem.total}</p>
+                        <p class="mb-0">${key}</p>
+                        <p class="mb-0">${currentItem.total}</p>
                         <button class="btn btn-danger removeItem font-weight-bold" data-product="${key}"><span class="fa fa-times"></span></button>
                     </li>
                 `;

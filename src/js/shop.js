@@ -73,7 +73,7 @@ $(document).ready(() =>{
             <div class="row">
                 <div class="col-12">
                     <button id="reProducts" class="btn btn-success form-control mb-3">
-                        <span class="fa fa-share-square"></span>
+                        <span class="fa fa-share"></span>
                         Nastavi razgledanje
                     </button>
                     <div class="card">
