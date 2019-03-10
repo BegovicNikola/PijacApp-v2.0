@@ -22,20 +22,13 @@
     },
     {
         "id": 4,
-        "name": "Manifestacije",
-        "path": "http://localhost/PijacApp/events.html",
-        "img": "src/assets/img/onama.png",
-        "imga": "src/assets/img/onama_active.png"
-    },
-    {
-        "id": 5,
         "name": "Kontakt",
         "path": "http://localhost/PijacApp/contact.html",
         "img": "src/assets/img/proizvodjaci.png",
         "imga": "src/assets/img/proizvodjaci_active.png"
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "Korpa",
         "path": "http://localhost/PijacApp/cart.html",
         "img": "src/assets/img/korpa.png",

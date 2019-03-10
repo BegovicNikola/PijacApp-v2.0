@@ -5,86 +5,18 @@
         "title": "Jabuka",
         "price": 100,
         "priceType": "din/kg",
-        "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         "img": "src/assets/img/blitva.png",
         "map": "src/assets/img/mapa.png",
         "category": "povrce"
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "jabuka",
         "title": "Kruska",
         "price": 100,
         "priceType": "din/kg",
-        "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         "img": "src/assets/img/krompir.png",
         "map": "src/assets/img/mapa.png",
         "category": "voce"
-    },
-    {
-        "id": 1,
-        "name": "sljiva",
-        "title": "Jabuka",
-        "price": 100,
-        "priceType": "din/kg",
-        "description": "lorem ipsum",
-        "img": "src/assets/img/krompir.png",
-        "map": "src/assets/img/mapa.png",
-        "category": "autohtoni"
-    },
-    {
-        "id": 1,
-        "name": "luk",
-        "title": "Jabuka",
-        "price": 100,
-        "priceType": "din/kg",
-        "description": "lorem ipsum",
-        "img": "src/assets/img/krompir.png",
-        "map": "src/assets/img/mapa.png",
-        "category": "povrce"
-    },
-    {
-        "id": 1,
-        "name": "jabuka",
-        "title": "Jabuka",
-        "price": 100,
-        "priceType": "din/kg",
-        "description": "lorem ipsum",
-        "img": "src/assets/img/krompir.png",
-        "map": "src/assets/img/mapa.png",
-        "category": "voce"
-    },
-    {
-        "id": 1,
-        "name": "sljiva",
-        "title": "Jabuka",
-        "price": 100,
-        "priceType": "din/kg",
-        "description": "lorem ipsum",
-        "img": "src/assets/img/krompir.png",
-        "map": "src/assets/img/mapa.png",
-        "category": "autohtoni"
-    },
-    {
-        "id": 1,
-        "name": "jabuka",
-        "title": "Jabuka",
-        "price": 100,
-        "priceType": "din/kg",
-        "description": "lorem ipsum",
-        "img": "src/assets/img/krompir.png",
-        "map": "src/assets/img/mapa.png",
-        "category": "voce"
-    },
-    {
-        "id": 1,
-        "name": "sljiva",
-        "title": "Jabuka",
-        "price": 100,
-        "priceType": "din/kg",
-        "description": "lorem ipsum",
-        "img": "src/assets/img/krompir.png",
-        "map": "src/assets/img/mapa.png",
-        "category": "autohtoni"
     }
 ]

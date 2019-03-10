@@ -72,36 +72,36 @@ $(document).ready(() =>{
         html += `
             <div class="row">
                 <div class="col-12">
-                    <button id="reProducts" class="btn btn-success form-control mb-3">
+                    <button id="reProducts" class="btn btn-danger form-control mb-3">
                         <span class="fa fa-share"></span>
                         Nastavi razgledanje
                     </button>
                     <div class="card">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <div class="w-50 pr-1">
+                            <div class="row">
+                                <div class="col-12">
                                     <h3>${product.title}</h3>
-                                    <img class="w-100" src="${product.img}" alt="${product.title}" />
                                 </div>
-                                <div class="w-50 pl-1 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <input id="quantity" class="form-control mb-3" type="number" min="1" max="10" value="1" />
-                                        <div class="d-flex justify-content-between">
-                                            <span>Cena izražena u:</span>
-                                            <span>${product.priceType}</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <span>Ukupno:</span>
-                                            <span id="total">${product.price}&nbsp;din</span>
-                                        </div>
-                                        <button id="addToCart" class="btn btn-success form-control mt-3">
-                                            <span class="fa fa-shopping-cart"></span>
-                                            Dodaj u korpu
-                                        </button>
+                                <div class="col-6">
+                                    <img class="w-100 border rounded" src="${product.img}" alt="${product.title}" />
+                                </div>
+                                <div class="col-6">
+                                    <input id="quantity" class="form-control mb-3" type="number" min="1" max="10" value="1" />
+                                    <div class="d-flex justify-content-between">
+                                        <span>Cena izražena u:</span>
+                                        <span>${product.priceType}</span>
                                     </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Ukupno:</span>
+                                        <span id="total">${product.price}&nbsp;din</span>
+                                    </div>
+                                    <button id="addToCart" class="btn btn-success form-control mt-3">
+                                        <span class="fa fa-shopping-cart"></span>
+                                        Dodaj u korpu
+                                    </button>
                                     <div class="mt-3">
-                                        <h5>Opis proizvoda</h5>
-                                        <p>${product.description}</p>
+                                        <h5>Poreklo:</h5>
+                                        <img class="w-100" src="${product.map}" alt="${product.title}" />
                                     </div>
                                 </div>
                             </div>
