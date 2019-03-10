@@ -3,6 +3,17 @@
 }
 body{
     background-image: url('../assets/img/pozadina.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.blue-background{
+    background-color: #64698E;
+    color: #fff;
+}
+.author-img{
+    width: 200px;
+    height: 200px;
 }
 .btn-success{
     background-color: #64698E;
