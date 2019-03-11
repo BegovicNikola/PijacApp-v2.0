@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pijac na točkovi</title>
     <link href="https://fonts.googleapis.com/css?family=Thasadith:700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Bootstrap minified css cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom css -->
@@ -19,9 +20,27 @@
         </a>
     </div>
     <!-- Navbar -->
-    <nav id="navholder" class="navbar navbar-expand-md navbar-light container">
+    <nav id="navholder" class="navbar navbar-expand-md navbar-light container mb-5">
         <!-- Navigation render -->
     </nav>
+    <!-- Main -->
+    <div class="container">
+        <div class="card p-5">
+            <h1 class="mb-4">Kontakt:</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="contactEmail">Email:</label>
+                    <input type="email" name="email" class="form-control" id="contactEmail">
+                    <small id="emailHelp" class="form-text text-muted">Uneti ispravan format email adrese.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="contactContent">Sadržaj:</label>
+                    <textarea class="form-control" id="contactContent" rows="5" name="contactContent"></textarea>
+                  </div>
+                  <button id="submit" type="submit" class="btn form-control" disabled><span class="fa fa-envelope mr-1"></span>Pošalji</button>
+            </form>
+        </div>
+    </div>
     <!-- Footer -->
     <div class="container-fluid blue-background mt-5 py-3">
         <p class="text-center mb-0">Copyright &#64; Nikola Begović 42/17</p>

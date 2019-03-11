@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "name": "krompir",
-        "title": "Jabuka",
-        "price": 100,
+        "name": "belogrozdje",
+        "title": "Belo Grožđe",
+        "price": 170,
         "priceType": "din/kg",
-        "img": "src/assets/img/blitva.png",
+        "img": "src/assets/img/belogrozdje.png",
         "map": "src/assets/img/mapa.png",
-        "category": "povrce"
+        "category": "voce"
     },
     {
         "id": 2,

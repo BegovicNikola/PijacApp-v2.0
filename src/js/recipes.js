@@ -129,12 +129,12 @@ $(document).ready(() => {
 
         // Return to main recipes
         $('#reRecipes').click(() => {
+            $('#recipeSort').val(0).trigger('change');
             getRecipes();
         });
     }
 
     $('#recipeSort').change(e=>{
-        console.log(e.target.value);
         const sortParam = e.target.value;
         sortRecipes(sortParam);
     });
