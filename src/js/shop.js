@@ -217,7 +217,7 @@ $(document).ready(() =>{
             method: "GET",
             dataType: "json",
             success: data => {
-                let res = data.filter(product => product.name.startsWith(searchInput) || product.category.startsWith(searchInput));
+                let res = data.filter(product => product.name.indexOf(searchInput) !== -1 || product.category.indexOf(searchInput) !== -1);
                 renderProducts(res);
             },
             error: err => {

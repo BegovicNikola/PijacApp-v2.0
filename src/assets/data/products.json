@@ -11,12 +11,132 @@
     },
     {
         "id": 2,
+        "name": "blitva",
+        "title": "Blitva",
+        "price": 45,
+        "priceType": "din/veza",
+        "img": "src/assets/img/blitva.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 3,
+        "name": "brokoli",
+        "title": "Brokoli",
+        "price": 220,
+        "priceType": "din/kg",
+        "img": "src/assets/img/brokoli.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 4,
+        "name": "celer",
+        "title": "Celer",
+        "price": 220,
+        "priceType": "din/kg",
+        "img": "src/assets/img/celer.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 5,
+        "name": "crniluk",
+        "title": "Crni Luk",
+        "price": 60,
+        "priceType": "din/kg",
+        "img": "src/assets/img/crniluk.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 6,
+        "name": "crnogrozdje",
+        "title": "Crno Grožđe",
+        "price": 170,
+        "priceType": "din/kg",
+        "img": "src/assets/img/crnogr.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "voce"
+    },
+    {
+        "id": 7,
+        "name": "cvekla",
+        "title": "Cvekla",
+        "price": 180,
+        "priceType": "din/kg",
+        "img": "src/assets/img/cvekla.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 8,
+        "name": "divljakruska",
+        "title": "Divlja Kruška",
+        "price": 150,
+        "priceType": "din/kg",
+        "img": "src/assets/img/divljakruska.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "voce"
+    },
+    {
+        "id": 9,
+        "name": "divljajabuka",
+        "title": "Divlja Jabuka",
+        "price": 130,
+        "priceType": "din/kg",
+        "img": "src/assets/img/jabukadivlja.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "voce"
+    },
+    {
+        "id": 10,
         "name": "jabuka",
-        "title": "Kruska",
-        "price": 100,
+        "title": "Jabuka",
+        "price": 50,
+        "priceType": "din/kg",
+        "img": "src/assets/img/jabuke.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "voce"
+    },
+    {
+        "id": 11,
+        "name": "karfiol",
+        "title": "Karfiol",
+        "price": 110,
+        "priceType": "din/kg",
+        "img": "src/assets/img/karfiol.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 12,
+        "name": "koprenjak",
+        "title": "Koprenjak",
+        "price": 130,
+        "priceType": "din/veza",
+        "img": "src/assets/img/koprenjak.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 13,
+        "name": "krompir",
+        "title": "Krompir",
+        "price": 80,
         "priceType": "din/kg",
         "img": "src/assets/img/krompir.png",
         "map": "src/assets/img/mapa.png",
-        "category": "voce"
+        "category": "povrce"
+    },
+    {
+        "id": 14,
+        "name": "kruska",
+        "title": "Kruška",
+        "price": 120,
+        "priceType": "din/kg",
+        "img": "src/assets/img/kruska.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
     }
 ]

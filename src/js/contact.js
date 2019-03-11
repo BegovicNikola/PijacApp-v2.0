@@ -11,11 +11,13 @@ $(document).ready(()=>{
     emailField.blur(() => {
 		if(!emailEx.test(emailField.val())){
             emailField.addClass('border-danger');
+            emailHelp.addClass('text-danger').removeClass('text-muted');
             let emailStatus = false;
             checkSubmit(emailStatus);
 		}
 		else{
             emailField.removeClass('border-danger');
+            emailHelp.removeClass('text-danger').addClass('text-muted');
             let emailStatus = true;
             checkSubmit(emailStatus);
 		}
