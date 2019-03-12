@@ -18,7 +18,9 @@ $(document).ready(() => {
     }
     // Render nav func
     function renderNav(navigation){
-        let currentPage = window.location.href;
+        let activePage = window.location.pathname.split('/');
+        let currentPage = activePage[activePage.length-1];
+        console.log(currentPage);
         function activeNav(data, param){
             if(data.path == param){
                 return data.imga;

@@ -2,35 +2,35 @@
     {
         "id": 1,
         "name": "Proizvodi",
-        "path": "http://localhost/PijacApp/index.html",
+        "path": "index.html",
         "img": "src/assets/img/proizvodi.png",
         "imga": "src/assets/img/proizvodi_active.png"
     },
     {
         "id": 2,
         "name": "Recepti",
-        "path": "http://localhost/PijacApp/recipes.html",
+        "path": "recipes.html",
         "img": "src/assets/img/recepti.png",
         "imga": "src/assets/img/recepti_active.png"
     },
     {
         "id": 3,
         "name": "Autor",
-        "path": "http://localhost/PijacApp/about.html",
+        "path": "about.html",
         "img": "src/assets/img/manifestacije.png",
         "imga": "src/assets/img/manifestacije_active.png"
     },
     {
         "id": 4,
         "name": "Kontakt",
-        "path": "http://localhost/PijacApp/contact.html",
+        "path": "contact.html",
         "img": "src/assets/img/proizvodjaci.png",
         "imga": "src/assets/img/proizvodjaci_active.png"
     },
     {
         "id": 5,
         "name": "Korpa",
-        "path": "http://localhost/PijacApp/cart.html",
+        "path": "cart.html",
         "img": "src/assets/img/korpa.png",
         "imga": "src/assets/img/korpa_active.png"
     }
