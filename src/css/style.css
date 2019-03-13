@@ -2,6 +2,9 @@
 *{
     font-family: 'Thasadith', sans-serif;
 }
+a:hover{
+    text-decoration: none;
+}
 body{
     background-image: url('../assets/img/pozadina.png');
     background-attachment: fixed;
