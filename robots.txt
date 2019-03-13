@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://begovicnikola.github.io/PijacApp-v2.0/sitemap.xml
