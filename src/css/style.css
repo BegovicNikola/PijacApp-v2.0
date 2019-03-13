@@ -36,6 +36,9 @@ ul{
 #logo{
     width: 400px;
 }
+.productItem{
+    cursor: pointer;
+}
 .nav-link img{
     width: 100px;
 }

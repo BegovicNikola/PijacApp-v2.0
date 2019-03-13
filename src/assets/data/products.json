@@ -137,6 +137,126 @@
         "priceType": "din/kg",
         "img": "src/assets/img/kruska.png",
         "map": "src/assets/img/mapa.png",
+        "category": "voce"
+    },
+    {
+        "id": 15,
+        "name": "lisicarka",
+        "title": "Lisičarka",
+        "price": 500,
+        "priceType": "din/kg",
+        "img": "src/assets/img/pblisicarka.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 16,
+        "name": "vrganj",
+        "title": "Vrganj",
+        "price": 300,
+        "priceType": "din/kg",
+        "img": "src/assets/img/vrganj.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 17,
+        "name": "maticnjak",
+        "title": "Matičnjak",
+        "price": 350,
+        "priceType": "din/50g",
+        "img": "src/assets/img/maticnjak.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 18,
+        "name": "zdravac",
+        "title": "Zdravac",
+        "price": 250,
+        "priceType": "din/100g",
+        "img": "src/assets/img/zdravac.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 19,
+        "name": "oskorusa",
+        "title": "Oskoruša",
+        "price": 180,
+        "priceType": "din/kg",
+        "img": "src/assets/img/oskorusa.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 20,
+        "name": "musmula",
+        "title": "Mušmula",
+        "price": 110,
+        "priceType": "din/kg",
+        "img": "src/assets/img/musmula.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 21,
+        "name": "sipurak",
+        "title": "Šipurak",
+        "price": 120,
+        "priceType": "din/kg",
+        "img": "src/assets/img/sipurak.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "autohtoni"
+    },
+    {
+        "id": 22,
+        "name": "kupus",
+        "title": "Kupus",
+        "price": 90,
+        "priceType": "din/kg",
+        "img": "src/assets/img/kupus.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 23,
+        "name": "crveniluk",
+        "title": "Crveni Luk",
+        "price": 80,
+        "priceType": "din/kg",
+        "img": "src/assets/img/lukcrveni.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 24,
+        "name": "pasulj",
+        "title": "Pasulj",
+        "price": 320,
+        "priceType": "din/kg",
+        "img": "src/assets/img/pasulj.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 25,
+        "name": "mladiluk",
+        "title": "Mladi Luk",
+        "price": 50,
+        "priceType": "din/veza",
+        "img": "src/assets/img/mladiluk.png",
+        "map": "src/assets/img/mapa.png",
+        "category": "povrce"
+    },
+    {
+        "id": 26,
+        "name": "tikvica",
+        "title": "Tikvica",
+        "price": 110,
+        "priceType": "din/kg",
+        "img": "src/assets/img/tikvica.png",
+        "map": "src/assets/img/mapa.png",
         "category": "povrce"
     }
 ]
